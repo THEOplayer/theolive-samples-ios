@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="21701" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="appleTV" appearance="light"/>
     <dependencies>
-        <deployment identifier="tvOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,24 +19,86 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello THEOlive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yj3-rg-SX3">
-                                <rect key="frame" x="827" y="68" width="267" height="46"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello THEOlive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yj3-rg-SX3">
+                                <rect key="frame" x="834.5" y="68" width="251" height="46"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXm-Sw-8m9">
+                                <rect key="frame" x="454" y="122" width="1012" height="527"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1012" id="Gaf-u4-I66"/>
+                                    <constraint firstAttribute="height" constant="527" id="aTs-jA-a77"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="ShA-tI-PQt" kind="embed" id="8en-K6-oCH"/>
+                                </connections>
+                            </containerView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Channel ID" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="cE3-oS-Ein">
+                                <rect key="frame" x="848" y="682" width="224" height="47"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHH-aW-Sgt">
+                                <rect key="frame" x="888" y="753" width="144" height="75"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Load"/>
+                                <connections>
+                                    <action selector="loadChannelPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="19O-bn-7as"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb6-8i-g1d">
+                                <rect key="frame" x="883" y="852" width="154" height="75"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                <connections>
+                                    <action selector="resetChannelPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="RkV-Ax-gbS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="rXm-Sw-8m9" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="AJb-Re-O2g"/>
+                            <constraint firstItem="cE3-oS-Ein" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="BDU-em-H6N"/>
+                            <constraint firstItem="cE3-oS-Ein" firstAttribute="top" secondItem="rXm-Sw-8m9" secondAttribute="bottom" constant="33" id="Ct5-zy-Cfk"/>
+                            <constraint firstItem="tHH-aW-Sgt" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="LBw-CI-udg"/>
+                            <constraint firstItem="tHH-aW-Sgt" firstAttribute="top" secondItem="cE3-oS-Ein" secondAttribute="bottom" constant="24" symbolic="YES" id="TVz-aX-KHb"/>
+                            <constraint firstItem="gb6-8i-g1d" firstAttribute="top" secondItem="tHH-aW-Sgt" secondAttribute="bottom" constant="24" symbolic="YES" id="X7W-fa-cjW"/>
+                            <constraint firstItem="rXm-Sw-8m9" firstAttribute="top" secondItem="Yj3-rg-SX3" secondAttribute="bottom" constant="8" symbolic="YES" id="f0n-w3-8pK"/>
                             <constraint firstItem="Yj3-rg-SX3" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="gjZ-ZO-jyM"/>
                             <constraint firstItem="Yj3-rg-SX3" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" constant="8" id="orQ-kU-sHT"/>
+                            <constraint firstItem="gb6-8i-g1d" firstAttribute="centerX" secondItem="tHH-aW-Sgt" secondAttribute="centerX" id="vd3-mu-iSi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="channelTextField" destination="cE3-oS-Ein" id="AjJ-C9-6sr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-32" y="-46"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="bwh-yc-eka">
+            <objects>
+                <viewController id="ShA-tI-PQt" customClass="PlayerViewController" customModule="THEOliveSDK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nl5-zU-qpE"/>
+                        <viewControllerLayoutGuide type="bottom" id="VEf-Cs-8JL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q6N-HB-wdy">
+                        <rect key="frame" x="0.0" y="0.0" width="1012" height="527"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gI9-0l-BTe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tM5-ee-sD0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719" y="-46"/>
         </scene>
     </scenes>
 </document>

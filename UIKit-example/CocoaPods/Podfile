@@ -2,10 +2,10 @@ source 'https://github.com/Dev1an/cocoapod-specs.git'
 
 target 'UIKitExample-iOS' do
     platform :ios, '14.0'
-    pod 'THEOliveSDK', '0.0.1'
+    pod 'THEOliveSDK', '1.0.0-alpha.1'
 end
 
-# target 'UIKitExample-tvOS' do
-#     platform :tvos, '14.0'
-#     pod 'THEOliveSDK', '0.0.1'
-# end
+target 'UIKitExample-tvOS' do
+    platform :tvos, '14.0'
+    pod 'THEOliveSDK', '1.0.0-alpha.1'
+end
