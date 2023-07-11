@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22138.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22113"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,24 +16,110 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello THEOlive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Er-6V-Dzz">
-                                <rect key="frame" x="139" y="59" width="114" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QT7-wr-ULi">
+                                <rect key="frame" x="16" y="59" width="361" height="203"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QT7-wr-ULi" secondAttribute="height" multiplier="16:9" id="GnG-cy-pQ7"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="3Cp-fQ-bHX" kind="embed" id="iEm-0U-J6J"/>
+                                </connections>
+                            </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6EY-oz-pG3">
+                                <rect key="frame" x="16" y="270" width="361" height="76.333333333333314"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fill in your channel ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aC3-bb-gqf">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DKF-ju-EEf">
+                                        <rect key="frame" x="252.33333333333329" y="42" width="108.66666666666666" height="34.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4r-Ws-3fe">
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="34.333333333333336"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Reset"/>
+                                                <connections>
+                                                    <action selector="resetChannelPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VKD-ax-CNM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="std-a9-CTM">
+                                                <rect key="frame" x="47" y="0.0" width="61.666666666666657" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Load"/>
+                                                <connections>
+                                                    <action selector="loadChannelPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y6w-VF-boL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aC3-bb-gqf" firstAttribute="width" secondItem="6EY-oz-pG3" secondAttribute="width" id="NTb-Pr-Ipb"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Er-6V-Dzz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6hn-1o-RoQ"/>
-                            <constraint firstItem="6Er-6V-Dzz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LN2-FP-6PO"/>
+                            <constraint firstItem="6EY-oz-pG3" firstAttribute="leading" secondItem="QT7-wr-ULi" secondAttribute="trailing" constant="20" id="1cG-01-VGR"/>
+                            <constraint firstItem="QT7-wr-ULi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5cV-a0-1bB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6EY-oz-pG3" secondAttribute="trailing" constant="20" id="H3d-4s-AjH"/>
+                            <constraint firstItem="6EY-oz-pG3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="I2r-xC-JBm"/>
+                            <constraint firstItem="QT7-wr-ULi" firstAttribute="width" secondItem="6EY-oz-pG3" secondAttribute="width" multiplier="2" id="IZB-QN-u4N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6EY-oz-pG3" secondAttribute="trailing" constant="16" id="LuC-KT-hun"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QT7-wr-ULi" secondAttribute="trailing" constant="16" id="QHv-Qx-Kxf"/>
+                            <constraint firstItem="QT7-wr-ULi" firstAttribute="top" secondItem="6EY-oz-pG3" secondAttribute="top" id="Ue2-NA-klN"/>
+                            <constraint firstItem="QT7-wr-ULi" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Wp2-TF-ou4"/>
+                            <constraint firstItem="QT7-wr-ULi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gUl-H7-SSD"/>
+                            <constraint firstItem="6EY-oz-pG3" firstAttribute="top" secondItem="QT7-wr-ULi" secondAttribute="bottom" constant="8" symbolic="YES" id="mal-TX-sRM"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="H3d-4s-AjH"/>
+                                <exclude reference="IZB-QN-u4N"/>
+                                <exclude reference="Ue2-NA-klN"/>
+                                <exclude reference="Wp2-TF-ou4"/>
+                                <exclude reference="1cG-01-VGR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="H3d-4s-AjH"/>
+                                <exclude reference="LuC-KT-hun"/>
+                                <exclude reference="QHv-Qx-Kxf"/>
+                                <exclude reference="5cV-a0-1bB"/>
+                                <include reference="IZB-QN-u4N"/>
+                                <include reference="Ue2-NA-klN"/>
+                                <include reference="Wp2-TF-ou4"/>
+                                <include reference="1cG-01-VGR"/>
+                                <exclude reference="I2r-xC-JBm"/>
+                                <exclude reference="mal-TX-sRM"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="channelTextField" destination="aC3-bb-gqf" id="Rrw-y3-Yf8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78" y="19"/>
+            <point key="canvasLocation" x="76.760563380281695" y="17.557251908396946"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="EJf-nP-EhW">
+            <objects>
+                <viewController id="3Cp-fQ-bHX" customClass="PlayerViewController" customModule="THEOliveSDK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QFX-v4-lAV">
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="203"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CMd-O0-h7u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="17"/>
         </scene>
     </scenes>
     <resources>
