@@ -19,14 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello THEOlive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yj3-rg-SX3">
-                                <rect key="frame" x="834.5" y="68" width="251" height="46"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXm-Sw-8m9">
-                                <rect key="frame" x="454" y="122" width="1012" height="527"/>
+                                <rect key="frame" x="454" y="68" width="1012" height="527"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1012" id="Gaf-u4-I66"/>
                                     <constraint firstAttribute="height" constant="527" id="aTs-jA-a77"/>
@@ -35,13 +29,13 @@
                                     <segue destination="ShA-tI-PQt" kind="embed" id="8en-K6-oCH"/>
                                 </connections>
                             </containerView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Channel ID" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="cE3-oS-Ein">
-                                <rect key="frame" x="848" y="682" width="224" height="47"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fill in your Channel ID" textAlignment="natural" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="cE3-oS-Ein">
+                                <rect key="frame" x="454" y="625" width="1012" height="47"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHH-aW-Sgt">
-                                <rect key="frame" x="888" y="753" width="144" height="75"/>
+                                <rect key="frame" x="1322" y="696" width="144" height="75"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Load"/>
@@ -50,7 +44,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb6-8i-g1d">
-                                <rect key="frame" x="883" y="852" width="154" height="75"/>
+                                <rect key="frame" x="1108" y="696" width="154" height="75"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Reset"/>
@@ -62,16 +56,15 @@
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rXm-Sw-8m9" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="AJb-Re-O2g"/>
-                            <constraint firstItem="cE3-oS-Ein" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="BDU-em-H6N"/>
-                            <constraint firstItem="cE3-oS-Ein" firstAttribute="top" secondItem="rXm-Sw-8m9" secondAttribute="bottom" constant="33" id="Ct5-zy-Cfk"/>
-                            <constraint firstItem="tHH-aW-Sgt" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="LBw-CI-udg"/>
-                            <constraint firstItem="tHH-aW-Sgt" firstAttribute="top" secondItem="cE3-oS-Ein" secondAttribute="bottom" constant="24" symbolic="YES" id="TVz-aX-KHb"/>
-                            <constraint firstItem="gb6-8i-g1d" firstAttribute="top" secondItem="tHH-aW-Sgt" secondAttribute="bottom" constant="24" symbolic="YES" id="X7W-fa-cjW"/>
-                            <constraint firstItem="rXm-Sw-8m9" firstAttribute="top" secondItem="Yj3-rg-SX3" secondAttribute="bottom" constant="8" symbolic="YES" id="f0n-w3-8pK"/>
-                            <constraint firstItem="Yj3-rg-SX3" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="gjZ-ZO-jyM"/>
-                            <constraint firstItem="Yj3-rg-SX3" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" constant="8" id="orQ-kU-sHT"/>
-                            <constraint firstItem="gb6-8i-g1d" firstAttribute="centerX" secondItem="tHH-aW-Sgt" secondAttribute="centerX" id="vd3-mu-iSi"/>
+                            <constraint firstItem="gb6-8i-g1d" firstAttribute="firstBaseline" secondItem="tHH-aW-Sgt" secondAttribute="firstBaseline" id="50u-GI-3yh"/>
+                            <constraint firstItem="cE3-oS-Ein" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="Aln-OT-PH9"/>
+                            <constraint firstItem="rXm-Sw-8m9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bw7-S1-G1J"/>
+                            <constraint firstItem="tHH-aW-Sgt" firstAttribute="trailing" secondItem="cE3-oS-Ein" secondAttribute="trailing" id="OMi-9x-FPT"/>
+                            <constraint firstItem="tHH-aW-Sgt" firstAttribute="leading" secondItem="gb6-8i-g1d" secondAttribute="trailing" constant="60" symbolic="YES" id="R6G-C3-jat"/>
+                            <constraint firstItem="tHH-aW-Sgt" firstAttribute="top" secondItem="cE3-oS-Ein" secondAttribute="bottom" constant="24" symbolic="YES" id="jFo-V3-tCy"/>
+                            <constraint firstItem="cE3-oS-Ein" firstAttribute="top" secondItem="rXm-Sw-8m9" secondAttribute="bottom" constant="30" id="kBX-gG-yP9"/>
+                            <constraint firstItem="cE3-oS-Ein" firstAttribute="width" secondItem="rXm-Sw-8m9" secondAttribute="width" id="lbZ-w7-Ove"/>
+                            <constraint firstItem="rXm-Sw-8m9" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" constant="8" id="ljJ-er-34C"/>
                         </constraints>
                     </view>
                     <connections>
