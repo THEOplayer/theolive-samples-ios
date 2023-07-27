@@ -2,3 +2,4 @@ xcuserdata
 .DS_Store
 Pods
 /UIKit-example/CocoaPods/UIKitExample.xcworkspace
+/Storyboard-example/CocoaPods/StoryboardExample.xcworkspace
