@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         if let channelID = channelTextField.text {
             print("Load channelID", channelID)
             playerViewController?.player.loadChannel(channelID)
+            view.endEditing(false)
         }
     }
     

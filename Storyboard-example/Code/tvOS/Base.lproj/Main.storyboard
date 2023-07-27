@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIKitExample_tvOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StoryboardExample_tvOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -32,13 +32,16 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fill in your Channel ID" textAlignment="natural" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="cE3-oS-Ein">
                                 <rect key="frame" x="454" y="625" width="1012" height="47"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                <connections>
+                                    <action selector="loadChannelPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="l2S-3Q-jcz"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHH-aW-Sgt">
                                 <rect key="frame" x="1322" y="696" width="144" height="75"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Load"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Load"/>
                                 <connections>
                                     <action selector="loadChannelPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="19O-bn-7as"/>
                                 </connections>
@@ -65,6 +68,7 @@
                             <constraint firstItem="cE3-oS-Ein" firstAttribute="top" secondItem="rXm-Sw-8m9" secondAttribute="bottom" constant="30" id="kBX-gG-yP9"/>
                             <constraint firstItem="cE3-oS-Ein" firstAttribute="width" secondItem="rXm-Sw-8m9" secondAttribute="width" id="lbZ-w7-Ove"/>
                             <constraint firstItem="rXm-Sw-8m9" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" constant="8" id="ljJ-er-34C"/>
+                            <constraint firstItem="gb6-8i-g1d" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wu6-TO-1qx" secondAttribute="leading" constant="8" id="zXa-1Z-uFT"/>
                         </constraints>
                     </view>
                     <connections>
@@ -75,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="-32" y="-46"/>
         </scene>
-        <!--Player View Controller-->
+        <!--Olive Player View Controller-->
         <scene sceneID="bwh-yc-eka">
             <objects>
-                <viewController id="ShA-tI-PQt" customClass="PlayerViewController" customModule="THEOliveSDK" sceneMemberID="viewController">
+                <viewController id="ShA-tI-PQt" customClass="THEOlivePlayerViewController" customModule="THEOliveSDK" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nl5-zU-qpE"/>
                         <viewControllerLayoutGuide type="bottom" id="VEf-Cs-8JL"/>
