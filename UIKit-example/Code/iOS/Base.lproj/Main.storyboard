@@ -107,13 +107,14 @@
             </objects>
             <point key="canvasLocation" x="76.760563380281695" y="17.557251908396946"/>
         </scene>
-        <!--Player View Controller-->
+        <!--Olive Player View Controller-->
         <scene sceneID="EJf-nP-EhW">
             <objects>
-                <viewController id="3Cp-fQ-bHX" customClass="PlayerViewController" customModule="THEOliveSDK" sceneMemberID="viewController">
+                <viewController id="3Cp-fQ-bHX" customClass="THEOlivePlayerViewController" customModule="THEOliveSDK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QFX-v4-lAV">
                         <rect key="frame" x="0.0" y="0.0" width="361" height="203"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TWO-zD-Gvj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>

@@ -9,7 +9,7 @@ import UIKit
 import THEOliveSDK
 
 class ViewController: UIViewController {
-    var playerViewController: PlayerViewController?
+    var playerViewController: THEOlivePlayerViewController?
     
     @IBOutlet weak var channelTextField: UITextField!
     
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         for controller in children {
-            if let playerController = controller as? PlayerViewController {
+            if let playerController = controller as? THEOlivePlayerViewController {
                 playerViewController = playerController
                 break
             }
@@ -27,9 +27,7 @@ class ViewController: UIViewController {
     @IBAction func loadChannelPressed(_ sender: Any) {
         if let channelID = channelTextField.text {
             print("Load channelID", channelID)
-            Task {
-                try await playerViewController?.player.loadChannel(channelID)
-            }
+            playerViewController?.player.loadChannel(channelID)
         }
     }
     
