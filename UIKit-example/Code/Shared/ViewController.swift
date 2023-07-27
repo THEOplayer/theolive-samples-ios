@@ -54,10 +54,16 @@ class ViewController: UIViewController {
         stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: safeArea.leadingAnchor, multiplier: 1).isActive = true
         safeArea.trailingAnchor.constraint(equalToSystemSpacingAfter: stackView.trailingAnchor, multiplier: 1).isActive = true
         stackView.topAnchor.constraint(equalToSystemSpacingBelow: safeArea.topAnchor, multiplier: 1).isActive = true
+        #if os(iOS)
+        let bottomAnchor: NSLayoutYAxisAnchor
         if #available(iOS 15.0, *) {
-            view.keyboardLayoutGuide.topAnchor.constraint(greaterThanOrEqualTo: stackView.bottomAnchor, constant: 8).isActive = true
+            bottomAnchor = view.keyboardLayoutGuide.topAnchor
         } else {
-            safeArea.bottomAnchor.constraint(greaterThanOrEqualTo: stackView.bottomAnchor, constant: 8).isActive = true
+            bottomAnchor = safeArea.bottomAnchor
         }
+        #else
+        let bottomAnchor = safeArea.bottomAnchor
+        #endif
+        bottomAnchor.constraint(greaterThanOrEqualTo: stackView.bottomAnchor, constant: 8).isActive = true
     }
 }

@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		108FF40CF9C214D995482506 /* libPods-UIKitExample-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BFBC65665AB770659F741E /* libPods-UIKitExample-iOS.a */; };
-		741F26052A72A984005DDC12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F25FC2A72A984005DDC12 /* ViewController.swift */; };
 		741F26062A72A984005DDC12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741F25FD2A72A984005DDC12 /* Assets.xcassets */; };
 		741F26072A72A984005DDC12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741F25FE2A72A984005DDC12 /* LaunchScreen.storyboard */; };
 		741F26082A72A984005DDC12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741F26002A72A984005DDC12 /* Main.storyboard */; };
 		741F26092A72A984005DDC12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F26022A72A984005DDC12 /* AppDelegate.swift */; };
 		741F260B2A72A984005DDC12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F26042A72A984005DDC12 /* SceneDelegate.swift */; };
 		741F26132A72AA1D005DDC12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F26122A72AA1D005DDC12 /* AppDelegate.swift */; };
-		741F26152A72AA1D005DDC12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F26142A72AA1D005DDC12 /* ViewController.swift */; };
 		741F26182A72AA1D005DDC12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741F26162A72AA1D005DDC12 /* Main.storyboard */; };
 		741F261A2A72AA1D005DDC12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741F26192A72AA1D005DDC12 /* Assets.xcassets */; };
 		741F261D2A72AA1D005DDC12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741F261B2A72AA1D005DDC12 /* LaunchScreen.storyboard */; };
+		741F26252A72B8C0005DDC12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F26242A72B8C0005DDC12 /* ViewController.swift */; };
+		741F26262A72B8C0005DDC12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F26242A72B8C0005DDC12 /* ViewController.swift */; };
 		A6B43FE4E7BF79C9DF60F91E /* libPods-UIKitExample-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AF8B57610AF6D86C10FB098 /* libPods-UIKitExample-tvOS.a */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,6 @@
 		3F2406AC030AE09C09785A8F /* Pods-UIKitExample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExample-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-UIKitExample-tvOS/Pods-UIKitExample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5AF8B57610AF6D86C10FB098 /* libPods-UIKitExample-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIKitExample-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		741F25E42A72A939005DDC12 /* UIKitExample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKitExample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		741F25FC2A72A984005DDC12 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		741F25FD2A72A984005DDC12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		741F25FF2A72A984005DDC12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		741F26012A72A984005DDC12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,10 +35,10 @@
 		741F26042A72A984005DDC12 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		741F26102A72AA1D005DDC12 /* UIKitExample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKitExample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		741F26122A72AA1D005DDC12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		741F26142A72AA1D005DDC12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		741F26172A72AA1D005DDC12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		741F26192A72AA1D005DDC12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		741F261C2A72AA1D005DDC12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		741F26242A72B8C0005DDC12 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8443A1C40E52370390EDC373 /* Pods-UIKitExample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-UIKitExample-tvOS/Pods-UIKitExample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		BE5D52A36D4B824B3D8322C5 /* Pods-UIKitExample-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitExample-iOS.debug.xcconfig"; path = "Target Support Files/Pods-UIKitExample-iOS/Pods-UIKitExample-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F8BFBC65665AB770659F741E /* libPods-UIKitExample-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIKitExample-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,8 +76,9 @@
 		741F25DB2A72A939005DDC12 = {
 			isa = PBXGroup;
 			children = (
+				741F26232A72B8C0005DDC12 /* Shared */,
 				741F25FB2A72A984005DDC12 /* iOS */,
-				741F26112A72AA1D005DDC12 /* UIKitExample-tvOS */,
+				741F26112A72AA1D005DDC12 /* tvOS */,
 				741F25E52A72A939005DDC12 /* Products */,
 				AD1428A092416F61604A93EC /* Pods */,
 				27D5CF2F3EC095183E8ED56C /* Frameworks */,
@@ -97,7 +97,6 @@
 		741F25FB2A72A984005DDC12 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				741F25FC2A72A984005DDC12 /* ViewController.swift */,
 				741F25FD2A72A984005DDC12 /* Assets.xcassets */,
 				741F25FE2A72A984005DDC12 /* LaunchScreen.storyboard */,
 				741F26002A72A984005DDC12 /* Main.storyboard */,
@@ -109,17 +108,25 @@
 			path = ../Code/iOS;
 			sourceTree = "<group>";
 		};
-		741F26112A72AA1D005DDC12 /* UIKitExample-tvOS */ = {
+		741F26112A72AA1D005DDC12 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
 				741F26122A72AA1D005DDC12 /* AppDelegate.swift */,
-				741F26142A72AA1D005DDC12 /* ViewController.swift */,
 				741F26162A72AA1D005DDC12 /* Main.storyboard */,
 				741F26192A72AA1D005DDC12 /* Assets.xcassets */,
 				741F261B2A72AA1D005DDC12 /* LaunchScreen.storyboard */,
 			);
-			name = "UIKitExample-tvOS";
+			name = tvOS;
 			path = ../Code/tvOS;
+			sourceTree = "<group>";
+		};
+		741F26232A72B8C0005DDC12 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				741F26242A72B8C0005DDC12 /* ViewController.swift */,
+			);
+			name = Shared;
+			path = ../Code/Shared;
 			sourceTree = "<group>";
 		};
 		AD1428A092416F61604A93EC /* Pods */ = {
@@ -320,8 +327,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				741F26252A72B8C0005DDC12 /* ViewController.swift in Sources */,
 				741F26092A72A984005DDC12 /* AppDelegate.swift in Sources */,
-				741F26052A72A984005DDC12 /* ViewController.swift in Sources */,
 				741F260B2A72A984005DDC12 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,7 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				741F26152A72AA1D005DDC12 /* ViewController.swift in Sources */,
+				741F26262A72B8C0005DDC12 /* ViewController.swift in Sources */,
 				741F26132A72AA1D005DDC12 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
