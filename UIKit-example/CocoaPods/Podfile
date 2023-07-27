@@ -1,0 +1,13 @@
+source 'https://github.com/THEOplayer/CocoaPod-specs.git'
+
+require_relative '../../Helpers/theolive-cocoapod-dependency'
+
+target 'UIKitExample-iOS' do
+    platform :ios, '14.0'
+    pod 'THEOliveSDK', current_theolive_version
+end
+
+target 'UIKitExample-tvOS' do
+    platform :tvos, '14.0'
+    pod 'THEOliveSDK', current_theolive_version
+end
