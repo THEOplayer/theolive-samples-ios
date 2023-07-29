@@ -1,16 +1,16 @@
 PODS:
-  - THEOliveSDK (1.0.0-alpha.19)
+  - THEOliveSDK (0.2.0)
 
 DEPENDENCIES:
-  - THEOliveSDK (= 1.0.0-alpha.19)
+  - THEOliveSDK (= 0.2.0)
 
 SPEC REPOS:
-  https://github.com/THEOplayer/CocoaPod-specs.git:
+  trunk:
     - THEOliveSDK
 
 SPEC CHECKSUMS:
-  THEOliveSDK: 0098f7afce8450ea5a4584e0192fdd8a340430eb
+  THEOliveSDK: cc49c8fc8e1ef193b8c6f18f39377f24ea9bec56
 
-PODFILE CHECKSUM: 4b5781552a24f74bf2c54130c99384846c98c555
+PODFILE CHECKSUM: 3adc8f03e021f2eb493cf16adae0261242887c5b
 
 COCOAPODS: 1.12.0

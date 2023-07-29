@@ -1,5 +1,13 @@
 require_relative '../../Helpers/theolive-cocoapod-dependency'
 
-target 'SwiftUI-example' do 
+target 'SwiftUI-example-iOS' do 
+    platform :ios, '14'
+    
+    pod 'THEOliveSDK', current_theolive_version
+end
+
+target 'SwiftUI-example-tvOS' do 
+    platform :tvos, '14'
+    
     pod 'THEOliveSDK', current_theolive_version
 end
