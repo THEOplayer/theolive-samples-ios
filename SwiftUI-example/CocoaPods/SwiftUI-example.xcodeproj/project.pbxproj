@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2B8C24982100ACEEC4870AD0 /* libPods-SwiftUI-example-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42093E4A9D750FDAF4AD23D4 /* libPods-SwiftUI-example-iOS.a */; };
-		61DF98603FB98BBEA3633696 /* libPods-SwiftUI-example-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEFEC71BAA97E400C9BD3CC /* libPods-SwiftUI-example-tvOS.a */; };
 		743F997C2A74D22D009BA153 /* SwiftUI_exampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743F99732A74D22D009BA153 /* SwiftUI_exampleApp.swift */; };
 		743F997D2A74D22D009BA153 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743F99742A74D22D009BA153 /* PlayerView.swift */; };
 		743F997E2A74D22D009BA153 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743F99752A74D22D009BA153 /* ContentView.swift */; };
-		743F99972A74D279009BA153 /* SwiftUI_exampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743F99732A74D22D009BA153 /* SwiftUI_exampleApp.swift */; };
-		743F99982A74D27B009BA153 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743F99742A74D22D009BA153 /* PlayerView.swift */; };
-		743F99992A74D27D009BA153 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743F99752A74D22D009BA153 /* ContentView.swift */; };
+		74775BE42A778CD20052E857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74775BE32A778CD20052E857 /* Assets.xcassets */; };
+		74775BE72A778CD20052E857 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74775BE62A778CD20052E857 /* Preview Assets.xcassets */; };
 		74BD0C022A73C864003407FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BD0C012A73C864003407FA /* Assets.xcassets */; };
 		74BD0C062A73C864003407FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74BD0C052A73C864003407FA /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -29,10 +27,9 @@
 		743F99732A74D22D009BA153 /* SwiftUI_exampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUI_exampleApp.swift; sourceTree = "<group>"; };
 		743F99742A74D22D009BA153 /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		743F99752A74D22D009BA153 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		743F99772A74D22D009BA153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		743F99792A74D22D009BA153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		743F997B2A74D22D009BA153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		743F99862A74D25D009BA153 /* SwiftUI-example-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-example-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74775BDD2A778CD10052E857 /* SwiftUI-example-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-example-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74775BE32A778CD20052E857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74775BE62A778CD20052E857 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74BD0BFA2A73C863003407FA /* SwiftUI-example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74BD0C012A73C864003407FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74BD0C032A73C864003407FA /* SwiftUI_example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUI_example.entitlements; sourceTree = "<group>"; };
@@ -42,11 +39,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		743F99832A74D25D009BA153 /* Frameworks */ = {
+		74775BDA2A778CD10052E857 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61DF98603FB98BBEA3633696 /* libPods-SwiftUI-example-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,23 +68,30 @@
 			path = ../Code/shared;
 			sourceTree = "<group>";
 		};
-		743F99762A74D22D009BA153 /* tvOS */ = {
+		74775BDE2A778CD10052E857 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				743F99772A74D22D009BA153 /* Assets.xcassets */,
-				743F99782A74D22D009BA153 /* LaunchScreen.storyboard */,
-				743F997A2A74D22D009BA153 /* Main.storyboard */,
+				74775BE32A778CD20052E857 /* Assets.xcassets */,
+				74775BE52A778CD20052E857 /* Preview Content */,
 			);
 			name = tvOS;
 			path = ../Code/tvOS;
+			sourceTree = "<group>";
+		};
+		74775BE52A778CD20052E857 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				74775BE62A778CD20052E857 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		74BD0BF12A73C863003407FA = {
 			isa = PBXGroup;
 			children = (
 				74BD0BFC2A73C863003407FA /* iOS */,
-				743F99762A74D22D009BA153 /* tvOS */,
 				743F99722A74D22D009BA153 /* shared */,
+				74775BDE2A778CD10052E857 /* tvOS */,
 				74BD0BFB2A73C863003407FA /* Products */,
 				78004957DE9EE188A023FDEB /* Pods */,
 				B41D53C490DE6449C2F8177A /* Frameworks */,
@@ -99,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				74BD0BFA2A73C863003407FA /* SwiftUI-example-iOS.app */,
-				743F99862A74D25D009BA153 /* SwiftUI-example-tvOS.app */,
+				74775BDD2A778CD10052E857 /* SwiftUI-example-tvOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,15 +151,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		743F99852A74D25D009BA153 /* SwiftUI-example-tvOS */ = {
+		74775BDC2A778CD10052E857 /* SwiftUI-example-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 743F99942A74D25E009BA153 /* Build configuration list for PBXNativeTarget "SwiftUI-example-tvOS" */;
+			buildConfigurationList = 74775BE82A778CD20052E857 /* Build configuration list for PBXNativeTarget "SwiftUI-example-tvOS" */;
 			buildPhases = (
-				F3ADE1CA398990FA2499EBBF /* [CP] Check Pods Manifest.lock */,
-				743F99822A74D25D009BA153 /* Sources */,
-				743F99832A74D25D009BA153 /* Frameworks */,
-				743F99842A74D25D009BA153 /* Resources */,
-				307575DD3EC5270BA223ADC1 /* [CP] Embed Pods Frameworks */,
+				74775BD92A778CD10052E857 /* Sources */,
+				74775BDA2A778CD10052E857 /* Frameworks */,
+				74775BDB2A778CD10052E857 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -164,7 +165,7 @@
 			);
 			name = "SwiftUI-example-tvOS";
 			productName = "SwiftUI-example-tvOS";
-			productReference = 743F99862A74D25D009BA153 /* SwiftUI-example-tvOS.app */;
+			productReference = 74775BDD2A778CD10052E857 /* SwiftUI-example-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		74BD0BF92A73C863003407FA /* SwiftUI-example-iOS */ = {
@@ -196,7 +197,7 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					743F99852A74D25D009BA153 = {
+					74775BDC2A778CD10052E857 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 					74BD0BF92A73C863003407FA = {
@@ -218,16 +219,18 @@
 			projectRoot = "";
 			targets = (
 				74BD0BF92A73C863003407FA /* SwiftUI-example-iOS */,
-				743F99852A74D25D009BA153 /* SwiftUI-example-tvOS */,
+				74775BDC2A778CD10052E857 /* SwiftUI-example-tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		743F99842A74D25D009BA153 /* Resources */ = {
+		74775BDB2A778CD10052E857 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74775BE72A778CD20052E857 /* Preview Assets.xcassets in Resources */,
+				74775BE42A778CD20052E857 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,23 +246,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		307575DD3EC5270BA223ADC1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-example-tvOS/Pods-SwiftUI-example-tvOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-example-tvOS/Pods-SwiftUI-example-tvOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-example-tvOS/Pods-SwiftUI-example-tvOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		76707A37B841CFC6816A3F07 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,38 +285,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F3ADE1CA398990FA2499EBBF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SwiftUI-example-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		743F99822A74D25D009BA153 /* Sources */ = {
+		74775BD92A778CD10052E857 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				743F99972A74D279009BA153 /* SwiftUI_exampleApp.swift in Sources */,
-				743F99982A74D27B009BA153 /* PlayerView.swift in Sources */,
-				743F99992A74D27D009BA153 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,38 +307,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		743F99782A74D22D009BA153 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				743F99792A74D22D009BA153 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		743F997A2A74D22D009BA153 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				743F997B2A74D22D009BA153 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		743F99952A74D25E009BA153 /* Debug */ = {
+		74775BE92A778CD20052E857 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 135D275A91DE744773DBE8B3 /* Pods-SwiftUI-example-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"../Code/tvOS/Preview Content\"";
 				DEVELOPMENT_TEAM = 7TD9A665TC;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -394,18 +336,18 @@
 			};
 			name = Debug;
 		};
-		743F99962A74D25E009BA153 /* Release */ = {
+		74775BEA2A778CD20052E857 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F33EF70CC2EA29B0FC7FCD3 /* Pods-SwiftUI-example-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"../Code/tvOS/Preview Content\"";
 				DEVELOPMENT_TEAM = 7TD9A665TC;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -538,10 +480,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ../Code/SwiftUI_example.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ../Code/ios/SwiftUI_example.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"../Code/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"../Code/iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = 7TD9A665TC;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -579,10 +521,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ../Code/SwiftUI_example.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ../Code/ios/SwiftUI_example.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"../Code/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"../Code/iOS/Preview Content\"";
 				DEVELOPMENT_TEAM = 7TD9A665TC;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -617,11 +559,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		743F99942A74D25E009BA153 /* Build configuration list for PBXNativeTarget "SwiftUI-example-tvOS" */ = {
+		74775BE82A778CD20052E857 /* Build configuration list for PBXNativeTarget "SwiftUI-example-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				743F99952A74D25E009BA153 /* Debug */,
-				743F99962A74D25E009BA153 /* Release */,
+				74775BE92A778CD20052E857 /* Debug */,
+				74775BEA2A778CD20052E857 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

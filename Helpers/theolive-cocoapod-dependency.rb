@@ -1,3 +1,3 @@
 def current_theolive_version
-    return '0.2.0'
+    return '1.0.0'
 end
