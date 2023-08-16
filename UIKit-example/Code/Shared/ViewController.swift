@@ -12,11 +12,14 @@ class ViewController: UIViewController {
     
     let player: THEOlivePlayer
     let playerViewController: THEOlivePlayerViewController
+    let printer = EventPrinter()
     
     required init?(coder: NSCoder) {
         player = THEOlivePlayer()
         playerViewController = THEOlivePlayerViewController(player: player)
         super.init(coder: coder)
+        
+        player.add(eventListener: printer)
     }
 
     override func viewDidLoad() {
@@ -65,5 +68,23 @@ class ViewController: UIViewController {
         let bottomAnchor = safeArea.bottomAnchor
         #endif
         bottomAnchor.constraint(greaterThanOrEqualTo: stackView.bottomAnchor, constant: 8).isActive = true
+    }
+}
+
+class EventPrinter: THEOlivePlayerEventListener {
+    func onChannelLoadStart(channelId: String) {
+        print("THEOlive loading channel", channelId)
+    }
+    
+    func onWaiting() {
+        print("THEOlive Waiting")
+    }
+    
+    func onPause() {
+        print("THEOlive paused")
+    }
+    
+    func onVolumeChange() {
+        print("THEOlive volume change")
     }
 }
